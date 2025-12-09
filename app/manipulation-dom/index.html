@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web Dinamis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tugas Web Dinamis</h1>
+        
+        <!-- 1. Dynamic List -->
+        <section class="task">
+            <h2>1. Dynamic List (Daftar Dinamis)</h2>
+            <input type="text" id="itemInput" placeholder="Masukkan item...">
+            <button onclick="tambahItem()">Tambah Item</button>
+            <button onclick="hapusItem()">Hapus</button>
+            <ul id="dynamicList"></ul>
+        </section>
+
+        <!-- 2. Ubah Warna Background -->
+        <section class="task">
+            <h2>2. Ubah Warna Background Secara Dinamis</h2>
+            <button class="btn-merah" onclick="ubahWarna('red')">Merah</button>
+            <button class="btn-hijau" onclick="ubahWarna('green')">Hijau</button>
+            <button class="btn-biru" onclick="ubahWarna('blue')">Biru</button>
+        </section>
+
+        <!-- 3. Counter dengan DOM -->
+        <section class="task">
+            <h2>3. Counter dengan DOM Manipulation</h2>
+            <div class="counter-display">
+                <h3 id="counterValue">0</h3>
+            </div>
+            <button onclick="tambahCounter()">+</button>
+            <button onclick="kurangCounter()">-</button>
+            <button onclick="resetCounter()">Reset</button>
+        </section>
+
+        <!-- 4. Toggle Show/Hide Element -->
+        <section class="task">
+            <h2>4. Toggle Show/Hide Element</h2>
+            <button onclick="toggleParagraph()">Tampilkan / Sembunyikan</button>
+            <p id="toggleText" class="hidden">Sebuah paragraf ditampilkan atau disembunyikan (toggle).</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
